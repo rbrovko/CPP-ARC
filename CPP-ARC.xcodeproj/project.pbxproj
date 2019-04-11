@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		059DCFF3156CE23900C9E1CE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 059DCFF2156CE23900C9E1CE /* main.cpp */; };
-		211E9E60225F2B8100966CB0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E9E5F225F2B8100966CB0 /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211E9E60225F2B8100966CB0 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

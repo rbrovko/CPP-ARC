@@ -23,6 +23,8 @@ Icon?
 *.la
 *.a
 
+arc_example
+
 # Xcode
 .DS_Store
 */build/*

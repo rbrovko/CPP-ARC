@@ -33,6 +33,9 @@
  * CPP ARC namespace
  ******************************************************************************/
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated"
+
 #pragma mark -
 #pragma mark CPP ARC namespace
 
@@ -444,3 +447,5 @@ int main( void )
     
     return 0;
 }
+
+#pragma GCC diagnostic pop
