@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		059DCFF3156CE23900C9E1CE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 059DCFF2156CE23900C9E1CE /* main.cpp */; };
+		211E9E60225F2B8100966CB0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 211E9E5F225F2B8100966CB0 /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		059DCFFF156CE32100C9E1CE /* std-cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "std-cpp.h"; sourceTree = "<group>"; };
 		059DD000156CE32100C9E1CE /* std-posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "std-posix.h"; sourceTree = "<group>"; };
 		059DD001156CE32100C9E1CE /* warnings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warnings.h; sourceTree = "<group>"; };
+		211E9E5F225F2B8100966CB0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211E9E60225F2B8100966CB0 /* libc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +52,7 @@
 			children = (
 				059DCFF1156CE23900C9E1CE /* CPP-ARC */,
 				059DCFEF156CE23900C9E1CE /* Products */,
+				211E9E5E225F2B8100966CB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +84,14 @@
 				059DD001156CE32100C9E1CE /* warnings.h */,
 			);
 			path = include;
+			sourceTree = "<group>";
+		};
+		211E9E5E225F2B8100966CB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				211E9E5F225F2B8100966CB0 /* libc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +128,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 059DCFE3156CE23900C9E1CE;
@@ -206,6 +219,7 @@
 		059DCFF9156CE23900C9E1CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -213,6 +227,7 @@
 		059DCFFA156CE23900C9E1CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
